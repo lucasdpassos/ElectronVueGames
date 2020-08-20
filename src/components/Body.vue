@@ -18,9 +18,9 @@
             v-if="hover"
             class="d-flex transition-fast-in-fast-out indigo darken-2 v-card--reveal display-1 white--text"
             style="height: 100%;"
-            
+             v-text="game.price"
           >
-            $14.99
+            
           </div>
         </v-expand-transition>
           
@@ -72,49 +72,57 @@ export default {
           cape: zelda,
           title: 'Legend of Zelda: Breath of the Wild',
           dev: 'Nintendo',
-          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+          Bannersrc: require('../assets/banners/zeldabanner.jpg'),
+          price: "R$25,00"
         },
         {
           cape: eurotruck,
           title: 'Euro Truck Simulator',
           dev: 'SCS Software',
-          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
+          price: "R$63,50"
         },
         {
           cape: zelda,
           title: 'Legend of Zelda: Breath of the Wild',
           dev: 'Nintendo',
-          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+          Bannersrc: require('../assets/banners/zeldabanner.jpg'),
+          price: "R$90,00"
         },
         {
           cape: eurotruck,
           title: 'Euro Truck Simulator',
           dev: 'SCS Software',
-          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
+          price: "R$25,00"
         },
         {
           cape: zelda,
           title: 'Legend of Zelda: Breath of the Wild',
           dev: 'Nintendo',
-          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+          Bannersrc: require('../assets/banners/zeldabanner.jpg'),
+          price: "R$25,00"
         },
         {
           cape: eurotruck,
           title: 'Euro Truck Simulator',
           dev: 'SCS Software',
-          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
+          price: "R$20,00"
         },
         {
           cape: zelda,
           title: 'Legend of Zelda: Breath of the Wild',
           dev: 'Nintendo',
-          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+          Bannersrc: require('../assets/banners/zeldabanner.jpg'),
+          price: "R$10,00"
         },
         {
           cape: eurotruck,
           title: 'Euro Truck Simulator',
           dev: 'SCS Software',
-          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
+          price: "R$39,00"
         },
         
           
