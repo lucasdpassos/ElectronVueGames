@@ -1,0 +1,138 @@
+<template>
+    <v-container>
+    <v-row dense>       
+        <v-col
+          v-for="(game, i) in games"
+          :key="i"
+          cols="3"
+        >
+         <v-hover v-slot:default="{ hover }">
+          <v-card            
+            dark
+          >
+          <v-img
+          :src="game.Bannersrc"
+          >
+          <v-expand-transition>
+          <div
+            v-if="hover"
+            class="d-flex transition-fast-in-fast-out indigo darken-2 v-card--reveal display-1 white--text"
+            style="height: 100%;"
+            
+          >
+            $14.99
+          </div>
+        </v-expand-transition>
+          
+            <div class="d-flex flex-no-wrap justify-space-between">
+              <div>
+                <v-card-title
+                  class="headline"
+                  v-text="game.title"
+                ></v-card-title>
+
+                <v-card-subtitle v-text="game.dev"></v-card-subtitle>
+                
+                
+              </div>
+
+             
+
+              <v-avatar
+                class="ma-3"
+                size="140"
+                tile
+              >
+                <v-img :src="game.cape"></v-img>
+              </v-avatar>
+            </div>
+            </v-img>
+          </v-card>
+         </v-hover>
+          
+        </v-col>
+      </v-row>
+    </v-container> 
+</template>
+
+
+
+<script>
+import zelda from '../assets/zelda.jpg'
+import eurotruck from '../assets/eurotruck.jpg'
+
+
+export default {
+    data: () => {
+         return {
+      current: {},
+      index: 0,      
+      games: [
+        {
+          cape: zelda,
+          title: 'Legend of Zelda: Breath of the Wild',
+          dev: 'Nintendo',
+          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+        },
+        {
+          cape: eurotruck,
+          title: 'Euro Truck Simulator',
+          dev: 'SCS Software',
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+        },
+        {
+          cape: zelda,
+          title: 'Legend of Zelda: Breath of the Wild',
+          dev: 'Nintendo',
+          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+        },
+        {
+          cape: eurotruck,
+          title: 'Euro Truck Simulator',
+          dev: 'SCS Software',
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+        },
+        {
+          cape: zelda,
+          title: 'Legend of Zelda: Breath of the Wild',
+          dev: 'Nintendo',
+          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+        },
+        {
+          cape: eurotruck,
+          title: 'Euro Truck Simulator',
+          dev: 'SCS Software',
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+        },
+        {
+          cape: zelda,
+          title: 'Legend of Zelda: Breath of the Wild',
+          dev: 'Nintendo',
+          Bannersrc: require('../assets/banners/zeldabanner.jpg')
+        },
+        {
+          cape: eurotruck,
+          title: 'Euro Truck Simulator',
+          dev: 'SCS Software',
+          Bannersrc: require('../assets/banners/eurotruckbanner.jpg')
+        },
+        
+          
+        
+      ],
+      player: new Audio()
+    }
+  },
+    
+}
+</script>
+<style>
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: .5;
+  position: absolute;
+  width: 100%;
+}
+</style>
