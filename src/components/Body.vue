@@ -9,6 +9,7 @@
          <v-hover v-slot:default="{ hover }">
           <v-card            
             dark
+            
           >
           <v-img
           :src="game.Bannersrc"
@@ -52,7 +53,9 @@
           
         </v-col>
       </v-row>
+      <User />
     </v-container> 
+    
 </template>
 
 
@@ -60,6 +63,7 @@
 <script>
 import zelda from '../assets/zelda.jpg'
 import eurotruck from '../assets/eurotruck.jpg'
+import User from './User'
 
 
 export default {
@@ -123,13 +127,14 @@ export default {
           dev: 'SCS Software',
           Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
           price: "R$39,00"
-        },
-        
-          
-        
+        },     
+                  
       ],
-      player: new Audio()
-    }
+     
+    }    
+    },
+    components: {
+      User,
   },
     
 }
