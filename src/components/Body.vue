@@ -63,6 +63,8 @@
 <script>
 import zelda from '../assets/zelda.jpg'
 import eurotruck from '../assets/eurotruck.jpg'
+import rocket from '../assets/rocket.jpg'
+import sims4 from '../assets/sims4.jpg'
 import User from './User'
 
 
@@ -87,17 +89,17 @@ export default {
           price: "R$63,50"
         },
         {
-          cape: zelda,
-          title: 'Legend of Zelda: Breath of the Wild',
-          dev: 'Nintendo',
-          Bannersrc: require('../assets/banners/zeldabanner.jpg'),
+          cape: sims4,
+          title: 'The Sims 4',
+          dev: 'EA',
+          Bannersrc: require('../assets/banners/sims4banner.png'),
           price: "R$90,00"
         },
         {
-          cape: eurotruck,
-          title: 'Euro Truck Simulator',
+          cape: rocket,
+          title: 'Rocket LEague',
           dev: 'SCS Software',
-          Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
+          Bannersrc: require('../assets/banners/tocketbanner.jpg'),
           price: "R$25,00"
         },
         {
