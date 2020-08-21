@@ -1,9 +1,9 @@
 <template>
     <div class='userProfile'>
         
-        <v-icon @click="drawer = !drawer" size="100" class="indigo accent-4"
+        <v-icon @click="drawer = !drawer" size="100" class="teal darken-2"
         
-        >mdi-account</v-icon>
+        >mdi-gamepad-variant</v-icon>
         <v-navigation-drawer app class="grey darken-4" v-model="drawer">
         
 <v-card
@@ -38,11 +38,11 @@
             color="rgba(0, 0, 0, .4)"
             dark
           >
-           <v-list-item-content class="white--text">
-              <v-list-item-title class="white--text">github.com/lucasdpassos</v-list-item-title>
-              <v-list-item-subtitle class="white--text">Lucas Dezerto Passos</v-list-item-subtitle>
-              <v-list-item-subtitle class="white--text">Biblioteca de Jogos: 40</v-list-item-subtitle>
-              <v-list-item-subtitle class="white--text">Horas jogadas: 1338</v-list-item-subtitle>
+           <v-list-item-content class="teal--text">
+              <v-list-item-title class="teal--text"><v-icon>mdi-github-box</v-icon>github.com/lucasdpassos</v-list-item-title>
+              <v-list-item-subtitle class="teal--text"><v-icon>mdi-account</v-icon> Lucas Dezerto Passos</v-list-item-subtitle>
+              <v-list-item-subtitle class="teal--text"><v-icon>mdi-gamepad</v-icon> Biblioteca de Jogos: 8</v-list-item-subtitle>
+              <v-list-item-subtitle class="teal--text"><v-icon>mdi-clock</v-icon> Horas jogadas: 1338</v-list-item-subtitle>
             </v-list-item-content>
            </v-list-item>
            </v-col>

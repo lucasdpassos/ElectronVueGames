@@ -1,21 +1,25 @@
 <template>
     <v-app-bar        
     app
-    dark    
-    color='indigo accent-4'
+    dark     
+    color='dark'   
+    :src=logo
+    style="width:300px;" 
     >
-    
-    Electron Games Store
-    
-   
+       
     </v-app-bar>
 </template>
 
+
 <script>
+
+
+
 export default {
     data: () => {
-        //
-    }
+     return {
+        logo: require('../assets/electronvue.png')
+    }}
 }
 
 </script>

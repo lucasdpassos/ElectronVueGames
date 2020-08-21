@@ -17,7 +17,7 @@
           <v-expand-transition>
           <div
             v-if="hover"
-            class="d-flex transition-fast-in-fast-out indigo darken-2 v-card--reveal display-1 white--text"
+            class="d-flex transition-fast-in-fast-out teal darken-2 v-card--reveal display-1 white--text"
             style="height: 100%;"
              v-text="game.price"
           >
@@ -29,6 +29,7 @@
               <div>
                 <v-card-title
                   class="headline"
+                  color='black'
                   v-text="game.title"
                 ></v-card-title>
 
@@ -65,6 +66,10 @@ import zelda from '../assets/zelda.jpg'
 import eurotruck from '../assets/eurotruck.jpg'
 import rocket from '../assets/rocket.jpg'
 import sims4 from '../assets/sims4.jpg'
+import ghost from '../assets/ghost.png'
+import sonic from '../assets/sonic.jpg'
+import goat from '../assets/goat.jpg'
+import skyrim from '../assets/skyrim.jpg'
 import User from './User'
 
 
@@ -97,37 +102,37 @@ export default {
         },
         {
           cape: rocket,
-          title: 'Rocket LEague',
+          title: 'Rocket League',
           dev: 'SCS Software',
           Bannersrc: require('../assets/banners/tocketbanner.jpg'),
           price: "R$25,00"
         },
         {
-          cape: zelda,
-          title: 'Legend of Zelda: Breath of the Wild',
-          dev: 'Nintendo',
-          Bannersrc: require('../assets/banners/zeldabanner.jpg'),
+          cape: ghost,
+          title: 'Ghost of Tsushima',
+          dev: 'Sucker Punch Studio',
+          Bannersrc: require('../assets/banners/ghostbanner.jpg'),
           price: "R$25,00"
         },
         {
-          cape: eurotruck,
-          title: 'Euro Truck Simulator',
-          dev: 'SCS Software',
-          Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
+          cape: goat,
+          title: 'Goat Simulator',
+          dev: 'Coffe Stain',
+          Bannersrc: require('../assets/banners/goatbanner.jpg'),
           price: "R$20,00"
         },
         {
-          cape: zelda,
-          title: 'Legend of Zelda: Breath of the Wild',
-          dev: 'Nintendo',
-          Bannersrc: require('../assets/banners/zeldabanner.jpg'),
+          cape: skyrim,
+          title: 'The Elder Scrolls: V - Skyrim',
+          dev: 'Bethesda',
+          Bannersrc: require('../assets/banners/skyrimbanner.jpg'),
           price: "R$10,00"
         },
         {
-          cape: eurotruck,
-          title: 'Euro Truck Simulator',
-          dev: 'SCS Software',
-          Bannersrc: require('../assets/banners/eurotruckbanner.jpg'),
+          cape: sonic,
+          title: 'Sonic Adventures',
+          dev: 'SEGA',
+          Bannersrc: require('../assets/banners/sonnicbanner.png'),
           price: "R$39,00"
         },     
                   

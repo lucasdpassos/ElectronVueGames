@@ -2,7 +2,7 @@
     <v-footer
     dark
     app
-    color='indigo accent-4'
+    color='teal darken-2'
     style='display:flex; justify-content:center;'
     >   
     
